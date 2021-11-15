@@ -1,0 +1,7 @@
+{% block body %}
+    <h1> {{text}} </h1>
+    <h2> User List: </h2>
+    {% for user in users %}
+        <li> {{ user.getUsername()}} </li>
+    {% endfor %}
+{%  endblock %}

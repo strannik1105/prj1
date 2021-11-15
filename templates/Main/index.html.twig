@@ -1,0 +1,16 @@
+{% block body %}
+    <div>
+        <h1> {{text}} </h1>
+    </div>
+    {% if username == "" %}
+        <div  align="right">
+            <a href = "login"> Вход </a>
+            <a href = "register"> Регистрация </a>
+        </div>
+    {% else %}
+        <div  align="right">
+            <p align> {{ username }}</p>
+            <a href = "logout"> Выход </a>
+        </div>
+    {% endif %}
+{%  endblock %}
